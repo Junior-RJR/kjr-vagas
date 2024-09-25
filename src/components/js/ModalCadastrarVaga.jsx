@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import '../../components/css/ModalCadastrarVaga.css'; 
+import axios from 'axios'; 
+import '../../components/css/ModalCadastrarVaga.css';
 
 const ModalCadastrarVaga = ({ vaga, onClose, onInputChange }) => {
   const [errors, setErrors] = useState({});
@@ -32,25 +33,14 @@ const ModalCadastrarVaga = ({ vaga, onClose, onInputChange }) => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    
+
     if (validateForm()) {
       try {
-        const response = await fetch('https://kjr-vagas-back.vercel.app/api/vagas', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify(vaga), // Converte os dados da vaga para JSON
-        });
+        const response = await axios.post('https://kjr-vagas-back.vercel.app/api/vagas', vaga); 
 
-        if (!response.ok) {
-          throw new Error('Erro ao cadastrar a vaga: ' + response.statusText);
-        }
-
-        const data = await response.json();
-        console.log('Vaga cadastrada com sucesso:', data);
+        console.log('Vaga cadastrada com sucesso:', response.data);
         setSuccessMessage('Vaga cadastrada com sucesso!');
-        
+
         setTimeout(() => {
           setSuccessMessage('');
           onClose();

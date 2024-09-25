@@ -15,7 +15,7 @@ const Modal = ({ vaga, onClose }) => {
     Queria alinhar contigo para conversarmos a respeito.
     Obrigado.`;
 
-    const telefoneContato = vaga.contatoCelular; // Use a propriedade correta
+    const telefoneContato = vaga.contatoCelular; 
 
     const urlWhatsApp = `https://api.whatsapp.com/send?phone=${telefoneContato}&text=${encodeURIComponent(mensagem)}`;
 
@@ -31,10 +31,10 @@ const Modal = ({ vaga, onClose }) => {
         <p><strong>Nível:</strong> {vaga.nivel}</p>
         <p><strong>Salário:</strong> {vaga.salario}</p>
         <p><strong>Responsável:</strong> {vaga.responsavel}</p>
-        <p><strong>Contato Email:</strong> {vaga.contatoEmail}</p> {/* Corrigido */}
-        <p><strong>Contato Celular:</strong> {vaga.contatoCelular}</p> {/* Corrigido */}
+        <p><strong>Contato Email:</strong> {vaga.contatoEmail}</p> 
+        <p><strong>Contato Celular:</strong> {vaga.contatoCelular}</p> 
         <p><strong>Atribuições:</strong> {vaga.atribuicoes}</p>
-        <p><strong>Competências Necessárias:</strong> {vaga.competenciasNecessarias}</p> {/* Corrigido */}
+        <p><strong>Competências Necessárias:</strong> {vaga.competenciasNecessarias}</p> 
 
         {showForm ? (
           <div className="formCandidatura">

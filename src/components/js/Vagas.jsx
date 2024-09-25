@@ -13,7 +13,7 @@ const Vagas = () => {
     useEffect(() => {
         const fetchVagas = async () => {
             try {
-                const response = await axios.get('https://kjr-vagas-back.vercel.app/api/vagas'); // URL do backend
+                const response = await axios.get('https://kjr-vagas-back.vercel.app/api/vagas'); 
                 setVagas(response.data);
                 setFilteredVagas(response.data);
             } catch (error) {
