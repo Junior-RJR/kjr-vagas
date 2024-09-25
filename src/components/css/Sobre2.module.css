@@ -1,0 +1,59 @@
+.sobre2Container {
+    position: relative;
+    width: 95%; 
+    margin: 0 auto; 
+    height: 300px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .backgroundImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    border-radius: 10px;
+  }
+  
+  .textOverlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+  }
+  
+  .textOverlay h1 {
+    font-size: 3.5rem;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 20px;
+    background: linear-gradient(to right, #ffffff, #dcdcdc); 
+    -webkit-background-clip: text;
+    color: transparent;
+    letter-spacing: 2px;
+  }
+  
+  .subTextContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 20px;
+  }
+  
+  .welcomeText {
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    text-align: left;
+  }
+  
+  .logoKJR {
+    width: 150px;
+    height: auto;
+  }
+  
