@@ -108,8 +108,10 @@
 
 @media (max-width: 768px) {
   .modalContentCadastrar {
-    width: 95%; 
+    width: 90%; 
     padding: 15px;
+    max-height: 60vh;
+    overflow-y: auto; 
   }
 
   .form-container {
@@ -119,4 +121,18 @@
   .form-column {
     margin: 0 0 10px 0; 
   }
+
+  .form-container .titulo-vaga,
+  .form-container .empresa,
+  .form-container .area,
+  .form-container .nivel,
+  .form-container .salario,
+  .form-container .nome-responsavel,
+  .form-container .contato-email,
+  .form-container .contato-celular,
+  .form-container .atribuicoes,
+  .form-container .competencias {
+    margin-bottom: 15px; 
+  }
 }
+

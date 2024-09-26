@@ -84,6 +84,40 @@
   background-color: #128c7e;
 }
 
+.whatsCancelContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.btnCancelar {
+  background-color: #c82333;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  flex: 0 0 20%;
+}
+
+.btnCancelar:hover {
+  background-color: #dc3545; 
+}
+
+.btnEnviarWhatsApp {
+  background-color: #25d366;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  flex: 0 0 78%;
+}
+
+.btnEnviarWhatsApp:hover {
+  background-color: #128c7e;
+}
+
 @media (max-width: 768px) {
   .modalContent {
     width: 90%; 

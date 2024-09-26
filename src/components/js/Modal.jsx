@@ -46,7 +46,10 @@ const Modal = ({ vaga, onClose }) => {
               value={nomeCandidato} 
               onChange={(e) => setNomeCandidato(e.target.value)} 
             />
-            <button onClick={handleEnviarMensagem} className="btnEnviarWhatsApp">Enviar para WhatsApp</button>
+            <div className="whatsCancelContainer">
+              <button onClick={handleEnviarMensagem} className="btnEnviarWhatsApp">Enviar para WhatsApp</button>
+              <button onClick={onClose} className="btnCancelar">Cancelar</button>
+            </div>
           </div>
         ) : (
           <div className="modalFooter">
