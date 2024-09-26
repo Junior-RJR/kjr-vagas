@@ -17,8 +17,8 @@ const ModalCadastrarVaga = ({ vaga, onClose, onInputChange }) => {
       'responsavel',
       'contatoEmail',
       'contatoCelular',
-      'atribuições',
-      'competenciasNecessarias',
+      'atribuicoes',
+      'competencias',
     ];
 
     requiredFields.forEach(field => {
@@ -82,27 +82,47 @@ const ModalCadastrarVaga = ({ vaga, onClose, onInputChange }) => {
           <div>
             <select name="area" value={vaga.area} onChange={onInputChange}>
               <option value="" disabled>Área</option>
-              <option value="TI">TI</option>
+              <option value="Administrativo">Administrativo</option>
+              <option value="Ajudante">Ajudante</option>
+              <option value="Designer">Designer</option>
               <option value="Marketing">Marketing</option>
-              <option value="Vendas">Vendas</option>
+              <option value="Recursos Humanos">Recursos Humanos</option>
+              <option value="Tecnologia">Tecnologia</option>
+              <option value="Vendedor">Vendedor</option>
+              <option value="Outro">Outro</option>
             </select>
             {errors.area && <div className="error-message">{errors.area}</div>}
           </div>
           <div>
             <select name="nivel" value={vaga.nivel} onChange={onInputChange}>
               <option value="" disabled>Nível</option>
+              <option value="Estagio">Estágio</option>
+              <option value="Trainee">Trainee</option>
+              <option value="Auxiliar">Auxiliar</option>
+              <option value="Tecnico">Técnico</option>
               <option value="Junior">Junior</option>
               <option value="Pleno">Pleno</option>
               <option value="Senior">Senior</option>
+              <option value="Supervisor">Supervisor</option>
+              <option value="Coordenador">Coordenador</option>
+              <option value="Gerente">Gerente</option>
+              <option value="Freelancer">Freelancer</option>
+              <option value="Outro">Outro</option>
             </select>
             {errors.nivel && <div className="error-message">{errors.nivel}</div>}
           </div>
           <div>
             <select name="salario" value={vaga.salario} onChange={onInputChange}>
               <option value="" disabled>Salário</option>
-              <option value="1000">R$ 1.000</option>
-              <option value="2000">R$ 2.000</option>
-              <option value="3000">R$ 3.000</option>
+              <option value="até R$ 1.000,00">até R$ 1.000,00</option>
+              <option value="R$ 1.001,00 até R$ 2.000,00">R$ 1.001,00 até R$ 2.000,00</option>
+              <option value="R$ 2.001,00 até R$ 3.000,00">R$ 2.001,00 até R$ 3.000,00</option>
+              <option value="R$ 3.001,00 até R$ 4.000,00">R$ 3.001,00 até R$ 4.000,00</option>
+              <option value="R$ 4.001,00 até R$ 5.000,00">R$ 4.001,00 até R$ 5.000,00</option>
+              <option value="R$ 5.001,00 até R$ 6.000,00">R$ 5.001,00 até R$ 6.000,00</option>
+              <option value="R$ 6.001,00 até R$ 7.000,00">R$ 6.001,00 até R$ 7.000,00</option>
+              <option value="acima de R$ 7.001,00">acima de R$ 7.001,00</option>
+              <option value="A combinar">A combinar</option>
             </select>
             {errors.salario && <div className="error-message">{errors.salario}</div>}
           </div>
@@ -138,21 +158,21 @@ const ModalCadastrarVaga = ({ vaga, onClose, onInputChange }) => {
           </div>
           <div>
             <textarea 
-              name="atribuições" 
+              name="atribuicoes" 
               placeholder="Atribuições" 
-              value={vaga.atribuições} 
+              value={vaga.atribuicoes} 
               onChange={onInputChange}
             ></textarea>
-            {errors.atribuições && <div className="error-message">{errors.atribuições}</div>}
+            {errors.atribuicoes && <div className="error-message">{errors.atribuicoes}</div>}
           </div>
           <div>
             <textarea 
-              name="competenciasNecessarias" 
+              name="competencias" 
               placeholder="Competências Necessárias" 
-              value={vaga.competenciasNecessarias} 
+              value={vaga.competencias} 
               onChange={onInputChange}
             ></textarea>
-            {errors.competenciasNecessarias && <div className="error-message">{errors.competenciasNecessarias}</div>}
+            {errors.competencias && <div className="error-message">{errors.competencias}</div>}
           </div>
           <button type="submit">Cadastrar</button>
           <button type="button" onClick={onClose}>Fechar</button>
