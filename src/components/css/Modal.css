@@ -10,8 +10,10 @@
   align-items: center;
 }
 
+/* 021679 */
+
 .modalContent {
-  background-color: #fff;
+  background-color: #f5f1f1;
   padding: 20px;
   border-radius: 10px;
   width: 500px;
@@ -22,10 +24,12 @@
 
 .modalContent h2 {
   margin-bottom: 15px;
+  color: #000000;
 }
 
 .modalContent p {
   margin: 10px 0;
+  color: #000000;
 }
 
 .modalFooter {
@@ -42,21 +46,21 @@
 }
 
 .btnCandidatar {
-  background-color: #007bff;
+  background-color: #000000;
   color: #fff;
 }
 
 .btnCandidatar:hover {
-  background-color: #0056b3;
+  background-color: #00000042;
 }
 
 .btnFechar {
-  background-color: #dc3545;
+  background-color: #c82333;
   color: #fff;
 }
 
 .btnFechar:hover {
-  background-color: #c82333;
+  background-color: #dc3545;
 }
 
 .formCandidatura {

@@ -1,68 +1,107 @@
 .modal-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.7);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modalContentCadastrar {
+  background-color: #f5f1f1;
+  border-radius: 8px;
+  padding: 20px;
+  width: 80%;
+  max-width: 900px;
+  border: 2px solid #000000; 
+}
+
+.modalContentCadastrar h2 {
+  text-align: center; 
+  margin-bottom: 20px;
   
-  .modalContent {
-    background: white;
-    border-radius: 10px;
-    padding: 20px;
-    width: 600px; 
-    height: auto; 
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-  }
-  
-  .modalContent h2 {
-    margin-bottom: 20px;
-  }
-  
-  .modalContent input,
-  .modalContent select,
-  .modalContent textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-    box-sizing: border-box; 
-  }
-  
-  .modalContent textarea {
-    height: 100px; 
-    resize: none; 
-  }
-  
-  .modalContent button {
-    background-color: #4CAF50; 
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    margin-right: 10px;
-  }
-  
-  .modalContent button:hover {
-    background-color: #45a049; 
-  }
-  
-  .success-message {
-    color: green;
-    margin-bottom: 10px;
-  }
-  
-  .error-message {
-    color: red;
-    font-size: 12px;
-    margin-top: 5px;
-  }
-  
+}
+
+.form-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.form-column {
+  flex: 1;
+  margin: 0 10px; 
+}
+
+.modalContentCadastrar input,
+.modalContentCadastrar select,
+.modalContentCadastrar textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box; 
+  background-color: transparent;
+  color: #000000;
+}
+
+.modalContentCadastrar textarea {
+  height: 100px; 
+  resize: none; 
+}
+
+.modalContentCadastrar button {
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-right: 10px;
+  background-color: #000000;
+}
+
+.success-message {
+  color: green;
+  margin-bottom: 10px;
+}
+
+.error-message {
+  color: red;
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+.modalFooterCadastrar {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.btnCadastrar{
+  background-color: #000000;
+  color: #fff;
+}
+
+.btnCadastrar:hover {
+  background-color: #00000042;
+}
+
+.btnFecharCadastrar {
+  background-color: #c82333;
+  color: #fff;
+}
+
+.btnFecharCadastrar:hover {
+  background-color: #dc3545;
+}
+
+.modalContentCadastrar select {
+  background-color: #f5f1f1;
+  color: #000000;
+}

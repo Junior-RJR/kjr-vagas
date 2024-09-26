@@ -13,6 +13,8 @@ const Modal = ({ vaga, onClose }) => {
     const mensagem = `Olá ${vaga.responsavel}, me chamo ${nomeCandidato}.
     Vi a vaga ${vaga.titulo} da empresa ${vaga.empresa} e me interessei. 
     Queria alinhar contigo para conversarmos a respeito.
+
+    Vim pelo portal  ADSA-Vagas em parceria com a KJR Desenvolvimentos.
     Obrigado.`;
 
     const telefoneContato = vaga.contatoCelular; 
@@ -34,7 +36,7 @@ const Modal = ({ vaga, onClose }) => {
         <p><strong>Contato Email:</strong> {vaga.contatoEmail}</p> 
         <p><strong>Contato Celular:</strong> {vaga.contatoCelular}</p> 
         <p><strong>Atribuições:</strong> {vaga.atribuicoes}</p>
-        <p><strong>Competências Necessárias:</strong> {vaga.competenciasNecessarias}</p> 
+        <p><strong>Competências Necessárias:</strong> {vaga.competencias}</p> 
 
         {showForm ? (
           <div className="formCandidatura">

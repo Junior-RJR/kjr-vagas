@@ -1,12 +1,12 @@
 import React from 'react';
 import styles from '../../components/css/Sobre2.module.css';
-import logoKJR from '../../assets/images/logoKJRw.svg'; 
+import logoKJR from '../../assets/images/logoazul.svg'; 
 
 const Sobre2 = () => {
   return (
     <div className={styles.sobre2Container}>
         <img
-            src={require('../../assets/images/vagasThumbnail.jpg')}
+            src={require('../../assets/images/vagasThumbnail9.jpg')}
             alt="Background"
             className={styles.backgroundImage} 
       />

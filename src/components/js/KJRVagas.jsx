@@ -9,13 +9,17 @@ import '../../components/css/Vagas.css';
 const KJRVagas = () => {
   return (
     <div className="vagas-container">
+      <header>
       <Header />
+      </header>
       <main>
         <Sobre2 />
         {/* <Filtro /> */}
         <Vagas />
       </main>
+    <footer>
       <Footer />
+    </footer>
     </div>
   );
 };

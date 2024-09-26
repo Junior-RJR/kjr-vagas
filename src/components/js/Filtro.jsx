@@ -82,10 +82,14 @@ const Filtro = ({ onFilter }) => {
           }}
         >
           <option value="">Área</option>
-          <option value="Recursos Humanos">Recursos Humanos</option>
-          <option value="Tecnologia">Tecnologia</option>
-          <option value="Ajudante">Ajudante</option>
-          <option value="Outros">Outros</option>
+            <option value="Administrativo">Administrativo</option>
+            <option value="Ajudante">Ajudante</option>
+            <option value="Designer">Designer</option>
+            <option value="Marketing">Marketing</option>
+            <option value="Recursos Humanos">Recursos Humanos</option>
+            <option value="Tecnologia">Tecnologia</option>
+            <option value="Vendedor">Vendedor</option>
+            <option value="Outro">Outro</option>
         </select>
       </div>
 
@@ -99,12 +103,18 @@ const Filtro = ({ onFilter }) => {
           }}
         >
           <option value="">Nível</option>
-          <option value="Estágio">Estágio</option>
-          <option value="Junior">Junior</option>
-          <option value="Pleno">Pleno</option>
-          <option value="Senior">Senior</option>
-          <option value="Trainee">Trainee</option>
-          <option value="Outro">Outro</option>
+            <option value="Estagio">Estágio</option>
+            <option value="Trainee">Trainee</option>
+            <option value="Auxiliar">Auxiliar</option>
+            <option value="Tecnico">Técnico</option>
+            <option value="Junior">Junior</option>
+            <option value="Pleno">Pleno</option>
+            <option value="Senior">Senior</option>
+            <option value="Supervisor">Supervisor</option>
+            <option value="Coordenador">Coordenador</option>
+            <option value="Gerente">Gerente</option>
+            <option value="Freelancer">Freelancer</option>
+            <option value="Outro">Outro</option>
         </select>
       </div>
 
@@ -118,10 +128,15 @@ const Filtro = ({ onFilter }) => {
           }}
         >
           <option value="">Salário</option>
-          <option value="ate1000">Até R$1.000</option>
-          <option value="1001a2000">De R$1.001 a R$2.000</option>
-          <option value="2001a3000">De R$2.001 a R$3.000</option>
-          <option value="acima3000">Acima de R$3.001</option>
+            <option value="até R$ 1.000,00">até R$ 1.000,00</option>
+            <option value="R$ 1.001,00 até R$ 2.000,00">R$ 1.001,00 até R$ 2.000,00</option>
+            <option value="R$ 2.001,00 até R$ 3.000,00">R$ 2.001,00 até R$ 3.000,00</option>
+            <option value="R$ 3.001,00 até R$ 4.000,00">R$ 3.001,00 até R$ 4.000,00</option>
+            <option value="R$ 4.001,00 até R$ 5.000,00">R$ 4.001,00 até R$ 5.000,00</option>
+            <option value="R$ 5.001,00 até R$ 6.000,00">R$ 5.001,00 até R$ 6.000,00</option>
+            <option value="R$ 6.001,00 até R$ 7.000,00">R$ 6.001,00 até R$ 7.000,00</option>
+            <option value="acima de R$ 7.001,00">acima de R$ 7.001,00</option>
+            <option value="A combinar">A combinar</option>
         </select>
       </div>
 

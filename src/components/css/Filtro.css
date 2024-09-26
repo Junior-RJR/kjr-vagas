@@ -16,7 +16,8 @@
     padding: 10px 40px 10px 15px;
     font-size: 16px;
     border-radius: 30px;
-    border: 1px solid #ddd;
+    border: 1px solid #021679;
+    background-color: transparent;
     width: 300px;
     outline: none;
   }
@@ -27,7 +28,7 @@
     right: 10px;
     transform: translateY(-50%);
     font-size: 18px;
-    color: #aaa;
+    color: #021679;
   }
   
   .dropdown {
@@ -40,19 +41,20 @@
     padding: 10px 15px;
     font-size: 16px;
     border-radius: 30px;
-    border: 1px solid #ddd;
     outline: none;
     appearance: none;
     background-color: #fff;
     cursor: pointer;
     padding-left: 40px;
+    border: 1px solid #021679;
+    background-color: transparent;
   }
   
   .dropdown .icon {
     position: absolute;
     left: 10px;
     font-size: 18px;
-    color: #aaa;
+    color: #021679;
   }
   
   .dropdown select option {
@@ -61,7 +63,7 @@
   }
   
   .botaoCadastrarVaga {
-    background-color: black; 
+    background-color: #021679; 
     color: white; 
     padding: 10px 20px; 
     cursor: pointer; 
@@ -80,14 +82,20 @@
   }
   
   .botaoCadastrarVaga:hover {
-    background-color: #333;
+    background-color: #021679a1
   }
   
   .iconAdd {
     margin-right: 5px;
   }
   
-  
+  .noResults {
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+    font-size: 18px;
+    color: #555;
+  }
 
 
   
