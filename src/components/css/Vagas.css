@@ -85,3 +85,30 @@ footer {
   text-align: center; 
   height: 100%;
 }
+
+@media (max-width: 768px) {
+  .vagasContainer {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-top: 15px; 
+  }
+
+  .vagaItem {
+    padding: 15px; 
+    min-height: 250px;
+  }
+
+  .vagaItem h2 {
+    font-size: 1.2rem; 
+  }
+
+  .vagaItem .empresa {
+    font-size: 0.9rem;
+  }
+
+  .verBtn {
+    width: 7rem; 
+    height: 1.8rem; 
+    font-size: 14px; 
+  }
+}

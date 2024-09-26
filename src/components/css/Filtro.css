@@ -97,5 +97,37 @@
     color: #555;
   }
 
-
+  @media (max-width: 768px) {
+    .filtroContainer {
+      flex-direction: column; 
+      gap: 10px;
+      margin-top: 1.5rem; 
+    }
+  
+    .searchBox input {
+      width: 100%; 
+      font-size: 14px; 
+      padding: 8px 35px 8px 10px; 
+    }
+  
+    .dropdown select {
+      width: 100%; 
+      font-size: 14px; 
+      padding: 8px 10px 8px 35px; 
+    }
+  
+    .botaoCadastrarVaga {
+      padding: 8px 15px;
+      font-size: 14px; 
+    }
+  
+    .noResults {
+      font-size: 16px; 
+    }
+  
+    .iconAdd {
+      margin-right: 3px;
+    }
+  }
+  
   

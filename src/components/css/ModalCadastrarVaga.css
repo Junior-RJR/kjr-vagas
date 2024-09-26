@@ -105,3 +105,18 @@
   background-color: #f5f1f1;
   color: #000000;
 }
+
+@media (max-width: 768px) {
+  .modalContentCadastrar {
+    width: 95%; 
+    padding: 15px;
+  }
+
+  .form-container {
+    flex-direction: column; 
+  }
+
+  .form-column {
+    margin: 0 0 10px 0; 
+  }
+}

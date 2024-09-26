@@ -83,3 +83,35 @@
 .btnEnviarWhatsApp:hover {
   background-color: #128c7e;
 }
+
+@media (max-width: 768px) {
+  .modalContent {
+    width: 90%; 
+    padding: 15px;
+  }
+
+  .modalContent h2 {
+    font-size: 1.5rem;
+  }
+
+  .modalContent p {
+    font-size: 1rem; 
+  }
+
+  .modalFooter {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .btnCandidatar,
+  .btnFechar,
+  .btnEnviarWhatsApp {
+    padding: 8px 15px; 
+    font-size: 0.9rem; 
+  }
+
+  .formCandidatura input {
+    padding: 8px;
+    font-size: 0.9rem; 
+  }
+}
